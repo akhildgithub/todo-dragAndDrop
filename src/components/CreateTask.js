@@ -124,7 +124,7 @@ const CreateTask = ({ open, handleClose }) => {
             Due date*
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DemoContainer components={["DatePicker"]}>
-                <DatePicker onChange={(e) => handleDateChange(e)} />
+                <DatePicker label='MM/DD/YYYY' onChange={(e) => handleDateChange(e)} />
               </DemoContainer>
             </LocalizationProvider>
           </FormControl>
