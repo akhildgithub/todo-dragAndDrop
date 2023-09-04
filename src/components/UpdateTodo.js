@@ -129,7 +129,7 @@ const UpdateTodo = ({ open, handleClose, todo }) => {
             Due date*
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DemoContainer components={["DatePicker"]}>
-                <DatePicker
+                <DatePicker label='MM/DD/YYYY' 
                   value={dayjs(task.date)}
                   onChange={(e) => handleDateChange(e)}
                 />
